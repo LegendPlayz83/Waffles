@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galaxy Guide</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famous Desserts</title>
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-black via-indigo-900 to-black text-white font-sans relative overflow-hidden">
-  <!-- Navbar -->
-  <nav class="flex justify-between items-center p-4">
-    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4a38ab03d1e3d8ca08ee3547ffd184e2e3acaf3_image.png" alt="GGL" class="h-12" />
-    <button id="themeToggle" class="text-yellow-400 text-3xl material-icons">wb_sunny</button>
+<body>
+  <nav class="navbar">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Logo" class="logo">
+    <h1>Famous Desserts</h1>
+    <button id="themeToggle">🍩</button>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="text-center mt-10 px-4">
-    <h1 class="text-4xl font-bold mb-2">Welcome to the Galaxy Guide</h1>
-    <p class="text-lg">Your journey through the stars begins here.</p>
-    <div class="mt-6">
-      <a href="planets.html" class="bg-purple-700 hover:bg-purple-900 text-white py-2 px-6 rounded-full">Explore the Planets</a>
-    </div>
-  </section>
+  <header class="hero">
+    <h2>Welcome to the World of Desserts!</h2>
+    <p>Indulge in the sweetness of the most loved desserts from around the globe.</p>
+    <a href="desserts.html" class="btn">Explore Desserts</a>
+    <button onclick="launchCake()" class="btn secondary">Surprise Me!</button>
+  </header>
 
-  <!-- Sidebar of Highlights -->
-  <aside class="fixed top-20 left-4 space-y-6">
-    <div class="bg-white bg-opacity-10 p-3 rounded-lg">
-      <h2 class="font-bold">The Sun</h2>
-      <p>Center of our solar system.</p>
-    </div>
-    <div class="bg-white bg-opacity-10 p-3 rounded-lg">
-      <h2 class="font-bold">The Milky Way</h2>
-      <p>Spiral galaxy with billions of stars.</p>
-    </div>
-  </aside>
+  <img id="flyingCake" src="https://cdn-icons-png.flaticon.com/512/2384/2384541.png" alt="Cake" class="cake">
 
-  <!-- Rocket Button -->
-  <div class="text-center mt-20">
-    <button onclick="launchRocket()" class="bg-red-600 hover:bg-red-800 px-6 py-2 rounded-full text-lg">Launch Rocket</button>
-  </div>
-  <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b6fb6d07a778599c58f77993e8e340bcbb8f4fcc_image.png" id="rocket" class="w-16 absolute bottom-10 left-0 transition-transform duration-[3000ms]" style="display:none" />
-
-  <!-- Footer -->
-  <footer class="text-center text-sm mt-20 opacity-70">
-    <p>&copy; 2025 Galaxy Guide</p>
+  <footer>
+    <p>&copy; 2025 Dessert Delights</p>
   </footer>
 </body>
 </html>
